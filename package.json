@@ -1,0 +1,25 @@
+{
+  "name": "games",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "dev": "webpack serve --mode development --port 3000",
+    "errors": "webpack --mode development --display-error-details"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "elm-webpack-loader": "^8.0.0",
+    "file-loader": "1.1.10",
+    "loader-utils": "2.0.0",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^3.11.3"
+  }
+}
