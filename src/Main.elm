@@ -1,8 +1,30 @@
 module Main exposing (..)
 
+import Browser
 import Html exposing (text)
 
 
-main : Html.Html a
+type alias Card =
+    { color : String
+    , backgroundColor : String
+    }
+
+
+type alias Model =
+    { cards : List Card
+    }
+
+
+type Msg
+    = Like
+    | DisLike
+
+
+view : Model -> Html.Html msg
+view model =
+    text "222"
+
+
+main : Program () {} Msg
 main =
-    text "123"
+    Browser.sandbox { init = init, view = view, update = update }
